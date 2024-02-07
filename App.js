@@ -57,10 +57,10 @@ export default function App() {
           </TouchableOpacity>
     </View>
     <View style={style.lista}>
+    <Text style={style.items}>{inputValue}</Text>
     <FlatList data={cartItems} renderItem={renderItem} 
     KeyExtractor={(item)=> item.id}/>
-    </View>
-     <Text>{inputValue}</Text>
+    </View >
    </View>
   );
 };
